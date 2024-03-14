@@ -11,6 +11,7 @@ import Alert from './Components/Alert';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Home from './Components/Home';
+import Footer from './Components/Footer';
 
 function App() {
 
@@ -31,10 +32,10 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route exact  path="/" element={<><Navbar/><Home/></>} />
-        <Route exact  path="/user" element={<><Navbar/><UserNavbar/><Main showalert={showalert}/></>} />
-        <Route exact  path="/login" element={<><Navbar/><Alert alert={alert}/><Login showalert= {showalert}/></>} />
-      <Route exact  path="/signup" element={<><Navbar/><Alert alert={alert}/><Signup showalert={showalert}/></>} />
+        <Route exact  path="/" element={<><Navbar/><Home/><Footer /></>} />
+        <Route exact  path="/user" element={<><Navbar/><UserNavbar/><Main showalert={showalert}/><Footer /></>} />
+        <Route exact  path="/login" element={<><Navbar/><Alert alert={alert}/><Login showalert= {showalert}/><Footer /></>} />
+      <Route exact  path="/signup" element={<><Navbar/><Alert alert={alert}/><Signup showalert={showalert}/><Footer /></>} />
       </Routes>
     </Router>
     </>

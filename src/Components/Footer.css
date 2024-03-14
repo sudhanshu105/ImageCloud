@@ -1,0 +1,13 @@
+.outer{
+    text-align: center;
+    background-color: black;
+    color: antiquewhite;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.outer a{
+    color: aliceblue
+}
